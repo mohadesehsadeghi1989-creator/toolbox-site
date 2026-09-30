@@ -1,1 +1,73 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>بازارینو | فروشگاه</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="nav">
+  <a class="brand" href="index.html"><span>◆</span> بازارینو</a>
+  <nav>
+    <a href="index.html">خانه</a><a class="active" href="#shop">فروشگاه</a>
+    <a href="#channels">کانال‌ها</a><a href="#groups">گروه‌ها</a><a href="#support">پشتیبانی</a>
+  </nav>
+  <div class="nav-actions"><button class="cart" id="cartBtn">🛒 سبد <b id="cartCount">0</b></button><button class="login">ورود</button></div>
+</header>
 
+<main>
+<section class="shop-hero">
+  <div>
+    <small>فروشگاه بازارینو</small>
+    <h1>محصول موردنظرت رو<br><b>سریع پیدا کن.</b></h1>
+    <p>دسته‌بندی موردنظرت رو انتخاب کن یا بین محصولات جست‌وجو کن.</p>
+  </div>
+  <div class="search"><span>⌕</span><input id="search" placeholder="جست‌وجوی محصول..." /></div>
+</section>
+
+<section class="shop-section" id="shop">
+  <div class="categories">
+    <button class="cat active" data-cat="all">همه</button>
+    <button class="cat" data-cat="digital">محصولات دیجیتال</button>
+    <button class="cat" data-cat="account">اکانت</button>
+    <button class="cat" data-cat="service">خدمات</button>
+  </div>
+  <div class="products" id="products">
+    <article class="product" data-cat="digital" data-name="محصول دیجیتال ویژه">
+      <div class="pic">✦</div><span class="tag">ویژه</span><h3>محصول دیجیتال ویژه</h3><p>تحویل سریع و توضیحات کامل محصول</p><div class="row"><strong>۳۹۹٬۰۰۰ تومان</strong><button class="add">افزودن</button></div>
+    </article>
+    <article class="product" data-cat="account" data-name="اکانت پریمیوم">
+      <div class="pic">◈</div><span class="tag">پرفروش</span><h3>اکانت پریمیوم</h3><p>اکانت آماده با تحویل سریع</p><div class="row"><strong>۵۹۹٬۰۰۰ تومان</strong><button class="add">افزودن</button></div>
+    </article>
+    <article class="product" data-cat="service" data-name="خدمات ویژه">
+      <div class="pic">◇</div><span class="tag">جدید</span><h3>خدمات ویژه</h3><p>سرویس اختصاصی و پشتیبانی</p><div class="row"><strong>۷۴۹٬۰۰۰ تومان</strong><button class="add">افزودن</button></div>
+    </article>
+    <article class="product" data-cat="digital" data-name="محصول دیجیتال دوم">
+      <div class="pic">✧</div><h3>محصول دیجیتال دوم</h3><p>مناسب استفاده روزمره</p><div class="row"><strong>۲۹۹٬۰۰۰ تومان</strong><button class="add">افزودن</button></div>
+    </article>
+    <article class="product" data-cat="account" data-name="اکانت ویژه">
+      <div class="pic">⬢</div><h3>اکانت ویژه</h3><p>دسترسی سریع و مطمئن</p><div class="row"><strong>۶۹۹٬۰۰۰ تومان</strong><button class="add">افزودن</button></div>
+    </article>
+    <article class="product" data-cat="service" data-name="پشتیبانی اختصاصی">
+      <div class="pic">⚡</div><h3>پشتیبانی اختصاصی</h3><p>پاسخ‌گویی و راهنمایی سریع</p><div class="row"><strong>۱۹۹٬۰۰۰ تومان</strong><button class="add">افزودن</button></div>
+    </article>
+  </div>
+  <div class="empty" id="empty">محصولی پیدا نشد.</div>
+</section>
+
+<section class="community" id="channels">
+  <div><small>کامیونیتی</small><h2>بعد از خرید هم کنارته</h2><p>برای اطلاع از محصولات جدید و دریافت پشتیبانی، به کانال و گروه ما بپیوند.</p></div>
+  <div class="links">
+    <a href="#" id="groups"><b>✦</b><span><strong>کانال اصلی</strong><small>اخبار و محصولات جدید</small></span>←</a>
+    <a href="#" id="support"><b>?</b><span><strong>پشتیبانی</strong><small>کمک و پیگیری سفارش</small></span>←</a>
+  </div>
+</section>
+</main>
+
+<div class="toast" id="toast">به سبد خرید اضافه شد ✓</div>
+<div class="cart-modal" id="modal"><div class="modal-box"><button class="close" id="close">×</button><h2>سبد خرید</h2><p id="cartText">سبد خرید خالی است.</p><button class="checkout">ادامه و ثبت سفارش</button></div></div>
+<footer>© ۲۰۲۶ بازارینو — فروشگاه • جامعه • پشتیبانی</footer>
+<script src="app.js"></script>
+</body>
+</html>
